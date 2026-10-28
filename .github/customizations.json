@@ -1,0 +1,11 @@
+{
+  "version": "1.0.0",
+  "upstream": "ketana0224/gh-codeapps-management-copilot",
+  "upstreamCommit": null,
+  "managedPaths": [
+    ".github/agents",
+    ".github/prompts",
+    ".github/skills",
+    ".github/tests"
+  ]
+}

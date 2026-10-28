@@ -1,0 +1,20 @@
+name: Code App deployment (locked)
+
+on:
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  deployment-locked:
+    name: Deployment blocked until setup is approved
+    runs-on: windows-latest
+    timeout-minutes: 2
+    defaults:
+      run:
+        shell: pwsh
+    steps:
+      - name: Explain deployment prerequisites and fail
+        run: |
+          Write-Output "::error::Deployment is locked. Complete the service principal, app edit sharing, protected GitHub Environment, authentication validation, and separate unlock approval described in README.md."
+          exit 1
