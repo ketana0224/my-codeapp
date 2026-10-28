@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "appId": null,
+  "appDisplayName": "mycodeapp",
+  "region": "prod",
+  "appType": "CodeApp",
+  "environmentId": "7a457b55-1919-ef9c-8b65-ca3c03926d14",
+  "description": "Microsoft Learn MCP search UI",
+  "buildPath": "./dist",
+  "buildEntryPoint": "index.html",
+  "localAppUrl": "http://localhost:3000",
+  "logoPath": "Default",
+  "connectionReferences": {},
+  "databaseReferences": {}
+}
