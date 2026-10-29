@@ -3,6 +3,7 @@ import { readFileSync, existsSync } from 'node:fs'
 
 const config = JSON.parse(readFileSync('power.config.json', 'utf8'))
 assert.equal(config.appDisplayName, 'mycodeapp')
+assert.equal(config.appId, '024f9390-23bd-404e-9e48-062a7e253409')
 assert.equal(config.environmentId, '7a457b55-1919-ef9c-8b65-ca3c03926d14')
 assert.equal(config.appType, 'CodeApp')
 assert.ok(existsSync('dist/index.html'), 'Build the application before predeploy checks')
